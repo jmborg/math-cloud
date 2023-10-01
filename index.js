@@ -1,38 +1,37 @@
-const firstOperand = document.getElementById('first-operand')
-const secondOperand = document.getElementById('second-operand')
+const firstOperand = document.querySelector('.first-op')
+const secondOperand = document.querySelector('.second-op')
 const startGame = document.querySelector('.start-game')
 const btns = document.querySelectorAll('.operator')
+const startBtn = document.getElementById("start-btn")
+const resultInput = document.getElementById("result")
 
-let selectedOperator = ""
+let answerColors = {
+    correct: "1px solid green",
+    incorrect: "1px solid red",
+    blank: "1px solid black"
+}
+
 let result = ""
-let correctAnswers = 0
 
-btns.forEach(function (i) {
-    i.addEventListener('click', function() {
-        selectedOperator = i.textContent
-        document.querySelector('.operator-selected').innerHTML = i.innerHTML
-    })
+startBtn.addEventListener('click', function() {
+    let num1 = calculateRandomNumber()
+    let num2 = calculateRandomNumber()
+    firstOperand.textContent = num1
+    secondOperand.textContent = num2
+    result = num1 + num2
 })
 
 function calculateRandomNumber () {
     return e = Math.floor(Math.random() * 11)
 }
 
-startGame.addEventListener('click', function() {
-    firstOperand.textContent = calculateRandomNumber()
-    secondOperand.textContent = calculateRandomNumber()
-    switch (selectedOperator) {
-        case "+":
-            console.log("You've chosen the addition operator")
-            break
-        case "-":
-            console.log("You've chosen the subtraction operator")
-            break
-        case "x":
-            console.log("You've chosen the multiply operator")
-            break
-        case "/":
-            console.log("You've chosen the division operator")
-            break
+resultInput.addEventListener("input", function() {
+    let answer =+ resultInput.value
+    if (answer === result) {
+        resultInput.style.border = answerColors.correct
+     } else if (answer != result) {
+        resultInput.style.border = answerColors.incorrect
+    } else if (answer = "") {
+        resultInput.style.border = answerColors.blank
     }
 })
