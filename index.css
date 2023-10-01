@@ -94,5 +94,6 @@ footer {
         border-radius: 5px;
         text-align: center;
         outline: none;
+        background-image: none;
     }
 }

@@ -1,7 +1,5 @@
 const firstOperand = document.querySelector('.first-op')
 const secondOperand = document.querySelector('.second-op')
-const startGame = document.querySelector('.start-game')
-const btns = document.querySelectorAll('.operator')
 const startBtn = document.getElementById("start-btn")
 const resultInput = document.getElementById("result")
 
@@ -31,7 +29,7 @@ resultInput.addEventListener("input", function() {
         resultInput.style.border = answerColors.correct
      } else if (answer != result) {
         resultInput.style.border = answerColors.incorrect
-    } else if (answer = "") {
+    } else if (answer = 0) {
         resultInput.style.border = answerColors.blank
     }
 })
