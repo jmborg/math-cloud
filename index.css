@@ -67,7 +67,6 @@ footer {
 
     .math-container {
         height: 23%;
-        border: 1px solid black;
         background-image: url(assets/img/math-cloud.svg);
     }
 
@@ -79,7 +78,6 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        border: solid 1px green;
     }
 
     .math-cloud h1 {
