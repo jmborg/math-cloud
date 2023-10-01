@@ -1,7 +1,9 @@
+html {
+    min-height: 100vh;
+}
+
 body {
     font-family: "Noteworthy", cursive;
-    height: 100%;
-    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -13,7 +15,6 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: hidden;
-    border: 1px solid lightgreen;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(107,192,246,0.7) 100%);
 }
@@ -23,11 +24,19 @@ header {
     height: 240px;
 }
 
+main {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 218px;
+}
+
 @media only screen and (max-width: 390px) {
     header {
-        background-image: url(assets/img/clouds-header.svg);
-        background-size: 100%;
-        background-repeat: no-repeat;
+        background-image: url(assets/img/clouds-small-header.svg);
     }
 
     .logo {
@@ -37,5 +46,44 @@ header {
         margin: 0;
         text-align: center;
         filter: drop-shadow(0px 2px 2px #000)
+    }
+    
+    footer {
+        background-image: url(assets/img/clouds-small-footer.svg);
+        position: absolute;
+        bottom: 0;
+    }
+
+    main {
+        margin: 4rem auto;
+        width: 90%;
+
+    }
+
+    header, .math-container, footer {
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .math-container {
+        height: 23%;
+        border: 1px solid black;
+        background-image: url(assets/img/math-cloud.svg);
+    }
+
+    .math-cloud {
+        width: 100%;
+        height: 90%;
+        margin-top: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px green;
+    }
+
+    .math-cloud h1 {
+        padding: 0;
+        margin: 0;
     }
 }

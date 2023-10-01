@@ -4,6 +4,7 @@ const startGame = document.querySelector('.start-game')
 const btns = document.querySelectorAll('.operator')
 
 let selectedOperator = ""
+let result = ""
 let correctAnswers = 0
 
 btns.forEach(function (i) {

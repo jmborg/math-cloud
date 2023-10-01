@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="-297.424 160.743 977.5 610.352" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient gradientTransform="matrix(1.13761 0 0 1.12921 -30.5075 -64.2651)" gradientUnits="userSpaceOnUse" id="LinearGradient" x1="195" x2="608.148" y1="623.926" y2="623.926">
+<stop offset="0.327341" stop-color="#fff7ca" stop-opacity="0.7"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0.7"/>
+</linearGradient>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="97.5" id="Filter" width="507.5" x="172.576" y="591.526">
+<feGaussianBlur in="SourceGraphic" result="Blur" stdDeviation="7.5"/>
+</filter>
+<linearGradient gradientTransform="matrix(1.13551 -0.0036378 -0.0036378 1.13131 -24.1441 -57.8337)" gradientUnits="userSpaceOnUse" id="LinearGradient_2" x1="195" x2="563.331" y1="509.546" y2="509.546">
+<stop offset="0.0021066" stop-color="#fff7ca" stop-opacity="0.7"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0.7"/>
+</linearGradient>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="303.909" id="Filter_2" width="456.427" x="176.25" y="365.334">
+<feGaussianBlur in="SourceGraphic" result="Blur" stdDeviation="7.5"/>
+</filter>
+<linearGradient gradientTransform="matrix(0.989581 -4.50813e-19 -4.50813e-19 0.996943 -5.51905 22.8408)" gradientUnits="userSpaceOnUse" id="LinearGradient_3" x1="197.689" x2="192.862" y1="615.426" y2="197.862">
+<stop offset="0.0021066" stop-color="#fff7ca" stop-opacity="0.7"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0.7"/>
+</linearGradient>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="507.5" id="Filter_3" width="97.5" x="135.376" y="160.743">
+<feGaussianBlur in="SourceGraphic" result="Blur" stdDeviation="7.5"/>
+</filter>
+<linearGradient gradientTransform="matrix(1.27246 -0.0778557 -0.0778557 1.18256 -12.4581 -77.6533)" gradientUnits="userSpaceOnUse" id="LinearGradient_4" x1="-39.3893" x2="195" y1="444.409" y2="444.409">
+<stop offset="0.0021066" stop-color="#fff7ca" stop-opacity="0.7"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0.7"/>
+</linearGradient>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="458.41" id="Filter_4" width="309.144" x="-103.659" y="210.833">
+<feGaussianBlur in="SourceGraphic" result="Blur" stdDeviation="7.5"/>
+</filter>
+<linearGradient gradientTransform="matrix(1.13484 0.00394724 0.00394724 1.13197 -32.4495 -61.8034)" gradientUnits="userSpaceOnUse" id="LinearGradient_5" x1="-161.853" x2="195" y1="501.459" y2="501.459">
+<stop offset="0.0021066" stop-color="#fff7ca" stop-opacity="0.7"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0.7"/>
+</linearGradient>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="326.569" id="Filter_5" width="443.304" x="-233.228" y="342.674">
+<feGaussianBlur in="SourceGraphic" result="Blur" stdDeviation="7.5"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="97.5" id="Filter_6" width="507.5" x="-297.424" y="603.743">
+<feGaussianBlur in="SourceGraphic" result="Blur" stdDeviation="7.5"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="462.666" id="Filter_7" width="293.103" x="172.576" y="203.943">
+<feGaussianBlur in="SourceGraphic" result="Blur" stdDeviation="7.5"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="241.203" id="Filter_8" width="241.203" x="70.5116" y="529.892">
+<feGaussianBlur in="SourceGraphic" result="Blur" stdDeviation="20"/>
+</filter>
+</defs>
+<clipPath id="ArtboardFrame">
+<rect height="610.352" width="977.5" x="-297.424" y="160.743"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer" vectornator:layerName="Layer">
+<g opacity="1" vectornator:layerName="Group 8">
+<path d="M191.326 646.485L661.326 610.276L661.326 670.276L191.326 646.544L191.326 646.485Z" fill="url(#LinearGradient)" fill-rule="nonzero" filter="url(#Filter)" opacity="1" stroke="none" vectornator:blur="15" vectornator:layerName="Rectangle 2"/>
+<path d="M195 650.442L583.927 384.084L613.927 436.045L195.03 650.493L195 650.442Z" fill="url(#LinearGradient_2)" fill-rule="nonzero" filter="url(#Filter_2)" opacity="1" stroke="none" vectornator:blur="15" vectornator:layerName="Rectangle 3"/>
+<path d="M190.335 649.493L154.126 179.493L214.126 179.493L190.394 649.493L190.335 649.493Z" fill="url(#LinearGradient_3)" fill-rule="nonzero" filter="url(#Filter_3)" opacity="1" stroke="none" vectornator:blur="15" vectornator:layerName="Rectangle 4"/>
+<path d="M186.676 650.493L-84.9091 264.583L-24.2874 229.583L186.735 650.459L186.676 650.493Z" fill="url(#LinearGradient_4)" fill-rule="nonzero" filter="url(#Filter_4)" opacity="1" stroke="none" vectornator:blur="15" vectornator:layerName="Rectangle 6"/>
+<path d="M191.292 650.493L-214.478 410.573L-180.064 361.424L39.9268 532.624L191.326 650.445L191.292 650.493Z" fill="url(#LinearGradient_5)" fill-rule="nonzero" filter="url(#Filter_5)" opacity="1" stroke="none" vectornator:blur="15" vectornator:layerName="Rectangle 7"/>
+<path d="M191.326 646.284L-278.674 682.493L-278.674 622.493L16.1545 637.38L191.326 646.225L191.326 646.284Z" fill="#fffbe8" fill-opacity="0.7" fill-rule="nonzero" filter="url(#Filter_6)" opacity="1" stroke="none" vectornator:blur="15" vectornator:layerName="Rectangle 8"/>
+<path d="M191.326 647.829L394.968 222.693L446.929 252.693L283.899 504.79L191.377 647.859L191.326 647.829Z" fill="#fffbe8" fill-opacity="0.7" fill-rule="nonzero" filter="url(#Filter_7)" opacity="1" stroke="none" vectornator:blur="15" vectornator:layerName="Rectangle 5"/>
+<path d="M151.126 171.917L222.344 171.917" fill="none" opacity="1" stroke="#f1d244" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1" vectornator:layerName="Line 3"/>
+<path d="M120.512 650.493C120.512 611.501 152.121 579.892 191.113 579.892C230.105 579.892 261.715 611.501 261.715 650.493C261.715 689.485 230.105 721.095 191.113 721.095C152.121 721.095 120.512 689.485 120.512 650.493Z" fill="#ffeb73" fill-rule="nonzero" filter="url(#Filter_8)" opacity="1" stroke="none" vectornator:blur="40" vectornator:layerName="Oval 1"/>
+</g>
+</g>
+</svg>
