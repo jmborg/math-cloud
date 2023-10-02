@@ -72,8 +72,8 @@ footer {
 
     .math-cloud {
         width: 100%;
-        height: 90%;
-        margin-top: 0 auto;
+        height: 100%;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -86,12 +86,60 @@ footer {
         margin-right: 10px;
     }
 
+    .equal-to {
+        border-bottom: none;
+    }
+
     #result {
-        width: 2em;
-        height: 2em;
+        width: 1em;
+        height: 1em;
         border-radius: 5px;
+        border: 1px solid black;
         text-align: center;
         outline: none;
         background-image: none;
+        padding: .5em;
+        font-family: "Noteworthy", cursive;
+        font-size: 2em;
+        font-weight: 700;
     }
+
+    #start-btn {
+        width: 75px;
+        height: 75px;
+        background-color: #77E300;
+        border: 5px solid #91D04B;
+        border-radius: 50%;
+        font-family: "Noteworthy", cursive;
+        font-weight: 400;
+        font-size: 24px;
+        color: whitesmoke;
+        margin: 0 auto;
+        transition: ease-out 0.3s;
+    }
+
+    #start-btn:hover {
+        background-color: #009CFF;
+        border: 5px solid #fff;
+    }
+}
+
+.fadein {
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+.fadeout {
+    animation-name: fadeout;
+    animation-duration: 1s;
+}
+
+@keyframes fadeout {
+    100%  {opacity: 0}
+    0%    {transform: translateY(0.5em)}
+}
+
+@keyframes fadein {
+    0% {transform: translateY(-0.5em);}
+    0% {opacity: 0;}
 }
