@@ -81,11 +81,11 @@ footer {
     }
 
     .math-cloud h1 {
+        width: .8em;
         padding: 0;
         margin: 0;
         margin-right: 10px;
     }
-
     .equal-to {
         border-bottom: none;
     }
@@ -122,24 +122,4 @@ footer {
         background-color: #009CFF;
         border: 5px solid #fff;
     }
-}
-
-.fadein {
-    animation-name: fadein;
-    animation-duration: 1s;
-}
-
-.fadeout {
-    animation-name: fadeout;
-    animation-duration: 1s;
-}
-
-@keyframes fadeout {
-    100%  {opacity: 0}
-    0%    {transform: translateY(0.5em)}
-}
-
-@keyframes fadein {
-    0% {transform: translateY(-0.5em);}
-    0% {opacity: 0;}
 }

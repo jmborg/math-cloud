@@ -12,29 +12,63 @@ const answerColors = {
 let operator = "+"
 let result = ""
 
-function start() {
+function update() {
     resultInput.focus()
     let num1 = calculateRandomNumber()
     let num2 = calculateRandomNumber()
-    if (num1 && num2 == 0) {
+    if (num1 && num2 === 0) {
         num1++
         num2++
     }
     firstOperand.textContent = num1
     secondOperand.textContent = num2
-    addAnimation()
+    fadeInAnimation(firstOperand, secondOperand)
     result = num1 + num2
 }
 
 // ANIMATIONSTEST - FUNKAR INTE SOM DEN SKA //
-function addAnimation() {
-    firstOperand.classList.add("fadein")
-    secondOperand.classList.add("fadein")
+function fadeInAnimation(operand1, operand2) {
+    operand1.animate([
+        { transform: "translateY(-0.6em)" },
+        { transform: "translateY(0)" }
+    ],
+    {
+        duration: 800,
+        easing: "ease-out",
+        iterations: 1
+
+    })
+    operand2.animate([
+        { transform: "translateY(-0.5em)" },
+        { transform: "translateY(0)" }
+    ],
+    {
+        duration: 1200,
+        easing: "ease-out",
+        iterations: 1
+    })
 }
 
-function removeAnimation() {
-    firstOperand.classList.remove("fadein")
-    secondOperand.classList.remove("fadein")
+function fadeOutAnimation(operand1, operand2) {
+    operand1.animate([
+        { transform: "translateY(0em)" },
+        { transform: "translateY(0.6)" }
+    ],
+    {
+        duration: 800,
+        easing: "ease-out",
+        iterations: 1
+
+    })
+    operand2.animate([
+        { transform: "translateY(0em)" },
+        { transform: "translateY(0.5)" }
+    ],
+    {
+        duration: 1200,
+        easing: "ease-out",
+        iterations: 1
+    })
 }
 
 function reset() {
@@ -42,7 +76,7 @@ function reset() {
     resultInput.value = ""
 }
 
-function calculateRandomNumber () {
+function calculateRandomNumber() {
     if (operator === "+") {
         return e = Math.floor(Math.random() * 11)
     } else if (operator === "-") {
@@ -52,20 +86,16 @@ function calculateRandomNumber () {
     }
 }
 
-startBtn.addEventListener('click', function() {
-    start()
+startBtn.addEventListener('click', function () {
+    update()
 })
 
-resultInput.addEventListener("input", function() {
+resultInput.addEventListener("input", function () {
     let answer =+ resultInput.value
+    resultInput.style.border = answerColors.blank
     if (answer === result) {
-        resultInput.style.border = answerColors.blank
-        removeAnimation()
+        fadeOutAnimation(firstOperand, secondOperand)   // eventlistener to check for animationend?
         reset()
-        start()
-     } else if (answer != result) {
-        resultInput.style.border = answerColors.incorrect
-    } else if (answer = 0) {    // Denna gör inget ännu
-        resultInput.style.border = answerColors.blank
+        update()
     }   // Strukturera om denna kod tillsammans med start() till något med begripligt
 })
