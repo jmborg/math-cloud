@@ -28,11 +28,13 @@ function update() {
 
 function calculateRandomNumber() {
     if (operator === "+") {
-        return e = Math.floor(Math.random() * 11)
-    } else if (operator === "-") {
-        return e = Math.floor(Math.random() * 11)
-    } else if (operator === "*") {
-        return e = Math.floor(Math.random() * 6)
+        return Math.floor(Math.random() * 11)
+    }
+    if (operator === "-") {
+        return Math.floor(Math.random() * 11)
+    }
+    if (operator === "*") {
+        return Math.floor(Math.random() * 6)
     }
 }
 
