@@ -26,6 +26,36 @@ function update() {
     result = num1 + num2
 }
 
+function calculateRandomNumber() {
+    if (operator === "+") {
+        return e = Math.floor(Math.random() * 11)
+    } else if (operator === "-") {
+        return e = Math.floor(Math.random() * 11)
+    } else if (operator === "*") {
+        return e = Math.floor(Math.random() * 6)
+    }
+}
+
+startBtn.addEventListener('click', function () {
+    update()
+})
+
+function reset() {
+    result = ""
+    resultInput.value = ""
+}
+
+resultInput.addEventListener("input", function () {
+    let answer =+ resultInput.value
+    resultInput.style.border = answerColors.blank
+    if (answer === result) {
+        correctGlow(resultInput) // funkar inte bra
+        fadeOutAnimation(firstOperand, secondOperand)   // eventlistener to check for animationend?
+        reset()
+        update()
+    }   // Strukturera om denna kod tillsammans med start() till något med begripligt
+})
+
 // ANIMATIONSTEST - FUNKAR INTE SOM DEN SKA //
 function fadeInAnimation(operand1, operand2) {
     operand1.animate([
@@ -52,7 +82,7 @@ function fadeInAnimation(operand1, operand2) {
 function fadeOutAnimation(operand1, operand2) {
     operand1.animate([
         { transform: "translateY(0em)" },
-        { transform: "translateY(0.6)" }
+        { transform: "translateY(0.6em)" }
     ],
     {
         duration: 800,
@@ -62,7 +92,7 @@ function fadeOutAnimation(operand1, operand2) {
     })
     operand2.animate([
         { transform: "translateY(0em)" },
-        { transform: "translateY(0.5)" }
+        { transform: "translateY(0.5em)" }
     ],
     {
         duration: 1200,
@@ -71,31 +101,13 @@ function fadeOutAnimation(operand1, operand2) {
     })
 }
 
-function reset() {
-    result = ""
-    resultInput.value = ""
-}
-
-function calculateRandomNumber() {
-    if (operator === "+") {
-        return e = Math.floor(Math.random() * 11)
-    } else if (operator === "-") {
-        return e = Math.floor(Math.random() * 11)
-    } else if (operator === "*") {
-        return e = Math.floor(Math.random() * 6)
-    }
-}
-
-startBtn.addEventListener('click', function () {
-    update()
-})
-
-resultInput.addEventListener("input", function () {
-    let answer =+ resultInput.value
-    resultInput.style.border = answerColors.blank
-    if (answer === result) {
-        fadeOutAnimation(firstOperand, secondOperand)   // eventlistener to check for animationend?
-        reset()
-        update()
-    }   // Strukturera om denna kod tillsammans med start() till något med begripligt
-})
+function correctGlow (answerbox) {
+    answerbox.animate([
+        { boxShadow: "0 0 40px 45px rgba(45,255,196,0.9)" }
+    ],
+    {
+        duration: 400,
+        easing: "ease-out",
+        iterations: 1
+    })
+} // MÅSTE GÅ ATT BUNTA IHOP ALL ANIMATIONSKOD PÅ ETT SMIDIGARE SÄTT?!

@@ -57,7 +57,6 @@ footer {
     main {
         margin: 4rem auto;
         width: 90%;
-
     }
 
     header, .math-container, footer {
@@ -68,6 +67,7 @@ footer {
     .math-container {
         height: 23%;
         background-image: url(assets/img/math-cloud.svg);
+        margin: 0 auto;
     }
 
     .math-cloud {
@@ -86,6 +86,7 @@ footer {
         margin: 0;
         margin-right: 10px;
     }
+    
     .equal-to {
         border-bottom: none;
     }
@@ -114,8 +115,6 @@ footer {
         font-weight: 400;
         font-size: 24px;
         color: whitesmoke;
-        margin: 0 auto;
-        transition: ease-out 0.3s;
     }
 
     #start-btn:hover {
