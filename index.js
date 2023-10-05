@@ -9,10 +9,11 @@ const answerColors = {
     blank: "1px solid black"
 }
 
-let operator = "+"
 let result = ""
 
+
 function update() {
+
     resultInput.focus()
     let num1 = calculateRandomNumber()
     let num2 = calculateRandomNumber()
@@ -26,7 +27,10 @@ function update() {
     result = num1 + num2
 }
 
-function calculateRandomNumber() {
+/**
+ * @param {string} operator
+ */
+function calculateRandomNumber(operator = "+") {
     if (operator === "+") {
         return Math.floor(Math.random() * 11)
     }
