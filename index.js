@@ -8,15 +8,20 @@ const answerColors = {
     incorrect: "1px solid red",
     blank: "1px solid black"
 }
-
+const operators = {
+    add: "+",
+    subtract: "-",
+    multiply: "*"
+};
 let result = ""
 
 
 function update() {
 
     resultInput.focus()
-    let num1 = calculateRandomNumber()
-    let num2 = calculateRandomNumber()
+    let num1 = calculateRandomNumber(operators.add)
+    let num2 = calculateRandomNumber(operators.add)
+    //varför ska båda vara över 0? är det okej om num1 = 0 och num2 är 2 t.ex? 
     if (num1 && num2 === 0) {
         num1++
         num2++
