@@ -34,7 +34,7 @@ footer {
     height: 218px;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 425px) {
     header {
         background-image: url(assets/img/clouds-small-header.svg);
     }
@@ -95,14 +95,16 @@ footer {
         width: 1em;
         height: 1em;
         border-radius: 5px;
-        border: 1px solid black;
         text-align: center;
         outline: none;
+        border: none;
         background-image: none;
+        background-color: none;
         padding: .5em;
         font-family: "Noteworthy", cursive;
         font-size: 2em;
         font-weight: 700;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
     #start-btn {
@@ -120,5 +122,9 @@ footer {
     #start-btn:hover {
         background-color: #009CFF;
         border: 5px solid #fff;
+    }
+
+    .resultNumber {
+        margin-left: 10px;
     }
 }
